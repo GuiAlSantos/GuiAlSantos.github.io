@@ -1,0 +1,122 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Certifica que o body ocupa a largura total */
+}
+
+/* Estilos do cabeçalho */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%; /* Expande para ocupar a largura total */
+    max-width: 1200px; /* Limite para telas grandes */
+    padding: 40px; /* Aumenta o espaçamento interno */
+    background-color: #222;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Estilos da foto de perfil */
+.profile-photo {
+    width: 150px; /* Aumenta o tamanho da foto */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+/* Estilos do texto */
+h1 {
+    font-size: 2.5em; /* Aumenta o tamanho da fonte */
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1.2em; /* Aumenta o tamanho do texto */
+}
+
+/* Estilos das seções */
+section {
+    width: 100%; /* Expande para ocupar a largura total */
+    max-width: 1200px; /* Limite para telas grandes */
+    margin: 30px auto;
+    padding: 30px; /* Aumenta o espaçamento interno */
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos dos cartões de projeto */
+#projects .project-card {
+    border: 1px solid #555;
+    padding: 20px; /* Aumenta o padding */
+    margin-bottom: 20px;
+    background-color: #222;
+    border-radius: 8px;
+}
+
+#projects .project-card h3 {
+    font-size: 1.5em; /* Aumenta o tamanho do título */
+    margin-bottom: 10px;
+}
+
+#projects .project-card a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 1.1em; /* Aumenta o tamanho dos links */
+}
+
+#projects .project-card a:hover {
+    color: #63c1ff;
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    header {
+        padding: 20px; /* Reduz o padding para telas menores */
+    }
+
+    h1 {
+        font-size: 2em; /* Reduz o tamanho da fonte */
+    }
+
+    p {
+        font-size: 1em; /* Reduz o tamanho do texto */
+    }
+
+    section {
+        padding: 20px; /* Reduz o padding das seções */
+    }
+
+    #projects .project-card {
+        padding: 15px; /* Reduz o padding dos cartões */
+    }
+
+    #projects .project-card h3 {
+        font-size: 1.2em; /* Reduz o tamanho do título */
+    }
+
+    #projects .project-card a {
+        font-size: 1em; /* Reduz o tamanho dos links */
+    }
+}
